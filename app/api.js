@@ -37,14 +37,14 @@ getMatchesData = function getMatchesData(data, maxMatches = 3) {
             }, (err) => {
                 if (err)
                     reject(err)
-                
+
                 resolve(responseMatches)
             }
         )
     })
 }
 
-router.get('/player/', (req, res) => {
+router.post('/player/', (req, res) => {
     requestedName = req.headers.playername
     options = {
         "playerNames" : requestedName
