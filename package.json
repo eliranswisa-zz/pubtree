@@ -1,6 +1,7 @@
 {
   "name": "example-create-react-app-express",
   "version": "1.0.0",
+  "proxy": "http://localhost:5000",
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
@@ -8,8 +9,12 @@
   },
   "dependencies": {
     "async": "^2.6.0",
+    "d3": "^5.1.0",
     "express": "^4.16.2",
-    "pubg-api": "^1.1.2"
+    "pubg-api": "^1.1.2",
+    "react-collapsible-tree": "^1.0.9",
+    "react-d3-tree": "^1.10.4",
+    "react-tree-graph": "^3.1.1"
   },
   "devDependencies": {
     "concurrently": "^3.5.0"
